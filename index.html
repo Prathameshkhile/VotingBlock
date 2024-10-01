@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting DApp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.7.0/dist/web3.min.js"></script>
+
+</head>
+<body>
+    <h1>Voting DApp</h1>
+    <div>
+        <button onclick="startVoting()">Start Voting</button>
+        <button onclick="stopVoting()">Stop Voting</button>
+        <button onclick="addVote()">Add Vote</button>
+        <button onclick="getTotalVotes()">Total Votes</button>
+
+    </div>
+    <h2>Status: <span id="votingStatus">Voting not started</span></h2>
+    <h3 id="result"></h3>
+    <h3>Voting History:</h3>
+    <ul id="history"></ul>
+
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
